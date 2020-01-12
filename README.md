@@ -1,24 +1,4 @@
 # vue
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ A simple Vue app that gives you a random country if you are unsure where to travel to next. 
+ 
+ The same app is created in React framework to demonstrate the differences/similarites between Vue and React components.
