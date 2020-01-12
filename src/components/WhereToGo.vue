@@ -2,7 +2,9 @@
   <div class="travel">
     <h2>{{msg}}</h2>
     <button @click="pickCountry()">Get me somewhere</button>
-    <span v-if="randomCountry">You should go to <strong>{{ randomCountry }}</strong> </span>
+    <span v-if="randomCountry">
+      You should go to <strong>{{ randomCountry }}</strong> 
+    </span>
   </div>
 </template>
 
