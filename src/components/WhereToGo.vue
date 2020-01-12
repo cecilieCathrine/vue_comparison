@@ -29,9 +29,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 button {
-  background-color: white;
+  background-color: #008CBA;
   border: 2px solid #008CBA;
-  color: black;
+  color: white;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -45,7 +45,8 @@ button {
   margin-bottom: 2em;
 }
 button:hover {
-  background-color: #008CBA;
-  color: white;
+  border: 2px solid #008CBA;
+  background: white;
+  color: black;
 }
 </style>
