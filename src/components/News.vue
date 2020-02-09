@@ -92,6 +92,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-bottom: 3em;
 }
 .news_article {
   display: flex;
