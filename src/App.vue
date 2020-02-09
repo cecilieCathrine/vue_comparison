@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <WhereToGo msg="Help! Where to go?"/>
+    <News />
   </div>
 </template>
 
 <script>
-import WhereToGo from './components/WhereToGo.vue'
+import News from './components/News.vue'
 
 export default {
   name: 'app',
   components: {
-    WhereToGo
+    News
   }
 }
 </script>
