@@ -54,7 +54,7 @@ export default {
     return {
       language: "no",
       articles: [],
-      queryString: ''
+      queryString: ""
     };
   },
   created() {
@@ -63,10 +63,15 @@ export default {
   methods: {
     fetchNews() {
       const queryString = this.queryString
-        ? `q=${this.queryString}&country=${this.language}&category=technology&apiKey=aa9fb7c4a9164fdb909ede436b864e00`
-        : `country=${this.language}&category=technology&apiKey=aa9fb7c4a9164fdb909ede436b864e00`;
+        ? `q=${this.queryString}&country=${this.language}&category=technology`
+        : `country=${this.language}&category=technology`;
       const url = `https://newsapi.org/v2/top-headlines?${queryString}`;
-      fetch(url)
+      fetch(url, {
+        method: "GET",
+        headers: {
+          "X-Api-Key": "aa9fb7c4a9164fdb909ede436b864e00"
+        }
+      })
         .then(response => response.json())
         .then(json => {
           this.articles = json.articles;
