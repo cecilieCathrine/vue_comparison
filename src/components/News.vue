@@ -30,7 +30,7 @@
       />
       <label for="en">Norwegian</label>
     </form>
-    <div class="news_articles">
+    <div v-if="articles.length > 0" class="news_articles">
       <div
         v-for="article in articles"
         :key="article.name"
@@ -44,12 +44,19 @@
         </p>
       </div>
     </div>
+    <div v-else>
+      <Message message="No articles found" />      
+   </div>
   </div>
 </template>
 
 <script>
+import Message from "./Message";
 export default {
   name: "News",
+  components: {
+    Message
+  },
   data() {
     return {
       language: "no",
@@ -123,5 +130,6 @@ input[type="search"] {
   padding: 10px;
   width: 16em;
   margin-right: 0.5em;
+  margin-bottom: 1em;
 }
 </style>
